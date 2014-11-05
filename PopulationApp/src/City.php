@@ -44,6 +44,14 @@ class City
         $this->postalCode = $pc;
     }
     
+    public function getPopulation() {
+        return $this->population;
+    }
+
+    public function setPopulation($population) {
+        $this->population = $population;
+    }
+    
     public function getPostalCode()
     {
         return $this->postalCode;
