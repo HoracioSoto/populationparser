@@ -7,19 +7,22 @@
 class City
 {
     /** @Id @Column(type="integer") @GeneratedValue **/
-    public $id;
+    protected $id;
     
     /** @Column(type="string") **/
-    public $name;
+    protected $name;
     
     /** @Column(type="integer") **/
-    public $pc;
+    protected $postalCode;
+    
+    /** @Column(type="integer") **/
+    protected $population;
     
     /**
      * @ManyToOne(targetEntity="Province", inversedBy="cities")
      * @JoinColumn(name="province_id", referencedColumnName="id")
      **/
-    public $province;
+    protected $province;
         
     public function getId()
     {
@@ -36,16 +39,19 @@ class City
         return $this->name;
     }
     
-    public function setPc($pc)
+    public function setPostalCode($pc)
     {
-        $this->pc = $pc;
+        $this->postalCode = $pc;
     }
     
-    public function getPc()
+    public function getPostalCode()
     {
-        return $this->pc;
+        return $this->postalCode;
     }
     
+    public function belongsTo(Province $province) {
+        return ($this->province === $province);
+    }
 }
 ?>
 
