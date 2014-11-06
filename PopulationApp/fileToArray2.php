@@ -1,6 +1,7 @@
 <?php
 /*
  * File format example:
+ * 
  * Province,Capital
  *     City1,PostalCode,Population
  *     City2,PostalCode,Population
@@ -12,6 +13,8 @@
  */
 
 /*
+ * Array format
+ * 
  * array(  array( 'name'    => 'ProvinceName1',
  *                'capital' => 'CapitalName1',
  *                'cities'  => array(
@@ -31,7 +34,7 @@
 
 /**
  * File to array
- * @param txt $file
+ * @param .txt $file
  * @return array
  */
 function fileToArray($file) {
