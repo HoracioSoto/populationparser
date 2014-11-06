@@ -1,0 +1,19 @@
+Chaco,Resistencia
+    Resistencia,3500,4000000
+    Saenz Pe�a,3500,30000
+    Barranqueras,3550,2
+Corrientes,Corrientes
+    Corrientes,3400,1000000
+    Paso de la Patria,3450,344400
+    Itati,3450,40000
+    Mercedes,3450,34400
+Misiones,Posadas
+    Posadas,3700,300000
+    Rio Iguazu,3700,20000
+Buenos Aires,La Plata
+    Tandil,1500,300000000
+    Junin,1700,20220000
+Formosa,Formosa
+    Formosa,3600,400000
+    Clorinda,3600,340000
+    Laguna Blanca,3600,200
