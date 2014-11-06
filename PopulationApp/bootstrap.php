@@ -18,7 +18,7 @@ $config = Setup::createAnnotationMetadataConfiguration(array(__DIR__."/src"), $i
 $conn = array(
     'driver' => 'pdo_mysql',
     'host' => 'localhost',
-    'dbname' => 'bugtracker',
+    'dbname' => 'population',
     'user' => 'hito',
     'password' => 'admin',
 );

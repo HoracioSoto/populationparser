@@ -1,6 +1,6 @@
 <?php
 // src/Province.php
-
+use Doctrine\Common\Collections\ArrayCollection;
 /**
  * @Entity @Table(name="provinces")
  **/
@@ -16,6 +16,12 @@ class Province
      * @OneToMany(targetEntity="City", mappedBy="province")
      **/
     public $cities;
+    
+    /**
+     * @OneToOne(targetEntity="City")
+     * @JoinColumn(name="capital_id", referencedColumnName="id")
+     **/
+    public $capital;
     
     public function __construct() {
         $this->cities = new ArrayCollection();

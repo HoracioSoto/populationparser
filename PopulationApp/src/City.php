@@ -60,6 +60,10 @@ class City
     public function belongsTo(Province $province) {
         return ($this->province === $province);
     }
+    
+    public function setProvince(Province $province){
+        $this->province = $province;
+    }
 }
 ?>
 

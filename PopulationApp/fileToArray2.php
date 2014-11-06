@@ -45,15 +45,15 @@ function fileToArray($file) {
     while (!feof($file)) {
         if (substr($line, 0, 4) == '    ') {
             $aux = explode(',', $line);
-            $city['name'] = $aux[0];
-            $city['postalcode'] = $aux[1];
-            $city['population'] = $aux[2];
+            $city['name'] = trim($aux[0]);
+            $city['postalcode'] = trim($aux[1]);
+            $city['population'] = trim($aux[2]);
             $province['cities'][] = $city;
         } else {
             if ($count > count($provinces)): $provinces[] = $province; endif;
             $aux = explode(',', $line);
-            $province['name'] = $aux[0];
-            $province['capital'] = $aux[1];
+            $province['name'] = trim($aux[0]);
+            $province['capital'] = trim($aux[1]);
             $province['cities'] = array();
             $count++;
         }

@@ -1,6 +1,6 @@
 Chaco,Resistencia
     Resistencia,3500,4000000
-    Saenz Pe�a,3500,30000
+    Saenz Peña,3500,30000
     Barranqueras,3550,2
 Corrientes,Corrientes
     Corrientes,3400,1000000
