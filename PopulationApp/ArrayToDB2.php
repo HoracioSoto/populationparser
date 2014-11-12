@@ -53,8 +53,8 @@ $provinces = fileToArray('src/filetest2.txt');
         }
         $entityManager->persist($provinceEntity);
     }
-    $entityManager->flush();
-    $entityManager->clear();
+$entityManager->flush();
+$entityManager->clear();
     echo "HOLA MUNDO!\n";
 
 ?>
