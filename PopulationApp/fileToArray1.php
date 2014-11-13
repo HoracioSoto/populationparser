@@ -24,7 +24,7 @@
  
 /**
  * File to array
- * @param .txt $file
+ * @param string $file
  * @return array
  */
 function fileToArray($file) 
@@ -36,7 +36,7 @@ function fileToArray($file)
         if (substr($line, 0, 4) == '    ') {
             $provinces[$province][] = trim($line);
         } else {
-            $province = $line;
+            $province = trim($line);
             $provinces[$province] = array();
         }
     }

@@ -34,7 +34,7 @@
 
 /**
  * File to array
- * @param .txt $file
+ * @param string $file
  * @return array
  */
 function fileToArray($file) {
